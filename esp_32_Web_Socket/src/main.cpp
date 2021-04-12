@@ -1,14 +1,14 @@
 #include <Arduino.h>
 #include "OTA.h"
-int a = OTA_setup();
+
 
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(9600);
   
   
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
-  Serial.print(a);
+  OTA_setup();
 }
